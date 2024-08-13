@@ -1,0 +1,2751 @@
+{
+	"variables": [],
+	"info": {
+		"name": "AliMeet APIs",
+		"_postman_id": "5fb8b3f9-51c4-3da3-f1a8-3b04dee2b48a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/register/registerUser?action=add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"register",
+						"registerUser"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "add",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Hello1\",\n\t\"role\": \"Student\",\n\t\"email\": \"kedarfullstack@gmail.com\",\n\t\"password\": \"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Verify User",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet//register/verifyUser?email=abcdefghijkl@gmail.com&password=$2a$10$9IJvBLdo8amIKbz63FoJduwv/gVYHi4zK44Kg.2xj2efNZVxGThBG",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"",
+						"register",
+						"verifyUser"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "abcdefghijkl@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "$2a$10$9IJvBLdo8amIKbz63FoJduwv/gVYHi4zK44Kg.2xj2efNZVxGThBG",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Hello1\",\n\t\"role\": \"Student\",\n\t\"email\": \"abc@gmail.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Verify User New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092//register/verifyUser?email=abcdefghijkl@gmail.com&password=$2a$10$9IJvBLdo8amIKbz63FoJduwv/gVYHi4zK44Kg.2xj2efNZVxGThBG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"",
+						"register",
+						"verifyUser"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "abcdefghijkl@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "$2a$10$9IJvBLdo8amIKbz63FoJduwv/gVYHi4zK44Kg.2xj2efNZVxGThBG",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Hello1\",\n\t\"role\": \"Student\",\n\t\"email\": \"abc@gmail.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Forget password",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/register/forgetPassword?email=kedarfullstack@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"register",
+						"forgetPassword"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "kedarfullstack@gmail.com",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Hello1\",\n\t\"role\": \"Student\",\n\t\"email\": \"abc@gmail.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Forget password New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/register/forgetPasswordAPI?email=kedarfullstack@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"register",
+						"forgetPasswordAPI"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "kedarfullstack@gmail.com",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Hello1\",\n\t\"role\": \"Student\",\n\t\"email\": \"abc@gmail.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/register/resetPassword?email=kedarfullstack@gmail.com&password=12345&oldPassword=$2a$10$/yfaS/zg2ROXeG53wU4.5OSyYJVuBih8v.84gvdTmTqH3QDJqz.f6",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"register",
+						"resetPassword"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "kedarfullstack@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "oldPassword",
+							"value": "$2a$10$/yfaS/zg2ROXeG53wU4.5OSyYJVuBih8v.84gvdTmTqH3QDJqz.f6",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Hello1\",\n\t\"role\": \"Student\",\n\t\"email\": \"abc@gmail.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/register/resetPasswordAPI?email=kedarfullstack@gmail.com&password=12345&oldPassword=$2a$10$CUmJRzkPkSvm7uZBWgWwTu2I71L5CThUbQzyKVmmpAQ1Yi9LZNsN6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"register",
+						"resetPasswordAPI"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "kedarfullstack@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "oldPassword",
+							"value": "$2a$10$CUmJRzkPkSvm7uZBWgWwTu2I71L5CThUbQzyKVmmpAQ1Yi9LZNsN6",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Hello1\",\n\t\"role\": \"Student\",\n\t\"email\": \"abc@gmail.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User Profile",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/user/editUserProfile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFjazFAZ21haWwuY29tIiwiaWF0IjoxNjE2NjgxNTU3LCJleHAiOjE2MTY2OTk1NTd9.SXsRTlnq7m_3f0DKcCEDin9whXxqPABwv6lcgNxBGE8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 2,\n\t\"userName\": \"Hello changed\",\n\t\"role\": \"Student\",\n\t\"email\": \"abcdesdsg@gmail.com\",\n\t\"password\": \"1234567\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/user/editUserAPI?userId=16&userName=Ghanshyam%20Dekavadiya&role=Teacher&password=$2a$10$ZSoa74K0VGhpFww.7XKqsejnvnY1HVQR7XvN1rn3NcL0r4VTL3Zz6",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"user",
+						"editUserAPI"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "16",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userName",
+							"value": "Ghanshyam%20Dekavadiya",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "role",
+							"value": "Teacher",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "$2a$10$ZSoa74K0VGhpFww.7XKqsejnvnY1HVQR7XvN1rn3NcL0r4VTL3Zz6",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZXNkc2dAZ21haWwuY29tIiwiaWF0IjoxNjIxMDU3MTExLCJleHAiOjE2MjEwNzUxMTF9.2mWTmJH8hvNrI6SIedZty-1lilsoV7GIEvSfl-ebM9I",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"url": "http://localhost:9092/user/getAllUsers/both",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MzIyMDcxMTMsImV4cCI6MTYzMjIyNTExM30.gseriTswhlrEe0DQWFsR0NU56o2FK-8wZIbSn2CoCN4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Save Password",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/meeting/addPassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZXNkc2dAZ21haWwuY29tIiwiaWF0IjoxNjIwMDQ1MTYwLCJleHAiOjE2MjAwNjMxNjB9.F8HSvPabRkqDmvlXlzVLL1ZroTiS_aLlX8WFk-R3E8w",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"meetingEntity\": {\n\t\t\"meetingId\": \"32\",\n\t\t\"roomName\":\"27 room\",\n\t\t\"meetingTitle\":\"27\",\n\t\t\"meetingDesc\":\"27\",\n\t\t\"invites\":[\"kedarfullstack1@gmail.com\",\"kedarfullstack2@gmail.com\"],\n\t\t\"startTime\":\"2019-01-21T05:47:08.644\",\n\t\t\"endTime\":\"2019-01-21T06:47:08.644\",\n\t\t\"meetingPassword\":\"12345678\",\n\t\t\n\t\t\"user\":{\n\t\t\t\"id\":\"7\"\n\t\t}\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users By Role",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/user/getAllUsers/Teacher",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFjazFAZ21haWwuY29tIiwiaWF0IjoxNjE3NjAzMDU0LCJleHAiOjE2MTc2MjEwNTR9.OVg3yvpZvmu1ACfbDNEzebqgT5HPqwhCOkD7aL17aFE",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": ""
+					}
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search User By Email",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/user/getUserDataByEmail/Hello",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjQ2Mzc5OTUsImV4cCI6MTYyNDY1NTk5NX0.u_Xq_evYzwtXVsKBk2vkBbetQXmu31LbpMzKBrIdyR0",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Registration Staging",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/register/registerUser?action=add",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"register",
+						"registerUser"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "add",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"userName\": \"Hello\",\n\"role\": \"Teacher\",\n\"email\": \"one@gmail.com\",\n\"password\": \"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Terms and Conditions",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/register/uploadTermAndCondition?userId=8",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"register",
+						"uploadTermAndCondition"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "8",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"description": "",
+							"type": "file",
+							"src": "TermsAndConditions.pdf"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Terms and Conditions",
+			"request": {
+				"url": "http://localhost:9092/register/getTermAndCondition",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"userName\": \"Hello\",\n\"role\": \"Teacher\",\n\"email\": \"one@gmail.com\",\n\"password\": \"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "kedarfullstack1@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "userRole",
+							"value": "TEACHER",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SendMail",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/meeting/sendMail",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZWdAZ21haWwuY29tIiwiaWF0IjoxNjE0MTA5MzM3LCJleHAiOjE2MTQxMjczMzd9.6HRduheSSDNUf0aMJ8pl5pOs41xPElNS45hDrieoRLM",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"userName\": \"Hello1\",\n    \"email\": \"patelvaishakhi440@gmail.com\",\n    \"password\": \"$2a$10$VIwwkcnO1Z1QzKglil/xPeGPHhDr4Eo3ZgiozaKxIPUEwRX6pcIsO\",\n    \"role\": \"TEACHER\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SaveMeeting",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/meeting/saveMeeting",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MzIzOTQ0MDQsImV4cCI6MTYzMjQxMjQwNH0._KXbGQzvjersuERwzJJa3p3lvXPv4fwVa8e76NrKqQM",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"meetingEntity\":{\r\n      \"roomName\":\"3gPKFEVnt3crZGi\",\r\n      \"meetingTitle\":\"test\",\r\n      \"meetingDesc\":\"\",\r\n      \"invites\":[\r\n         \"kedarthakkar23@gmail.com\"\r\n      ],\r\n      \"startTime\":\"2021-04-01T12:24:02.000\",\r\n      \"endTime\":\"2021-04-01T12:54:02.000\",\r\n      \"user\":{\r\n         \"id\":\"7\"\r\n      }\r\n   }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SaveMeeting New",
+			"request": {
+				"url": "http://localhost:9092/meeting/saveMeetingAPI",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MzI0NjE5MzMsImV4cCI6MTYzMjQ3OTkzM30.UbEfITzJhfKhSeewSXCi7gXa3aXBsIalehj_5RH7vng",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"meetingEntity\":{\"roomName\":\"WuLF4MgLseJyt0U\",\"meetingTitle\":\"Test\",\"meetingDesc\":\"\",\"invites\":[\"kedarfullstack@gmail.com\",\"kedarfullstack123@gmail.com\"],\"startTime\":\"2021-09-24T13:00:00\",\"endTime\":\"2021-09-24T14:30:00\",\"startMeetingTime\":1632396600932,\"endMeetingTime\":1632398400316,\"user\":{\"id\":\"21\"}}}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Meeting",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/meeting/editMeeting",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZXNkc2dAZ21haWwuY29tIiwiaWF0IjoxNjIwMDIxNTM1LCJleHAiOjE2MjAwMzk1MzV9.Iw1Caw12eGFfD_YTEyWgLwjxwbenAQ_oUrlcXzckN1I",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"meetingEntity\": {\n\t\t\"meetingId\": \"32\",\n\t\t\"roomName\":\"27 room\",\n\t\t\"meetingTitle\":\"27\",\n\t\t\"meetingDesc\":\"27\",\n\t\t\"invites\":[\"kedarfullstack1@gmail.com\",\"kedarfullstack2@gmail.com\"],\n\t\t\"startTime\":\"2019-01-21T05:47:08.644\",\n\t\t\"endTime\":\"2019-01-21T06:47:08.644\",\n\t\t\"meetingPassword\":\"12345\",\n\t\t\n\t\t\"user\":{\n\t\t\t\"id\":\"7\"\n\t\t}\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Room",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/meeting/validateRoom?roomName=3gPKFEVnt3crZGi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"meeting",
+						"validateRoom"
+					],
+					"query": [
+						{
+							"key": "roomName",
+							"value": "3gPKFEVnt3crZGi",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZXNkc2dAZ21haWwuY29tIiwiaWF0IjoxNjIwMDIxNTM1LCJleHAiOjE2MjAwMzk1MzV9.Iw1Caw12eGFfD_YTEyWgLwjxwbenAQ_oUrlcXzckN1I",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"meetingEntity\": {\n\t\t\"meetingId\": \"32\",\n\t\t\"roomName\":\"27 room\",\n\t\t\"meetingTitle\":\"27\",\n\t\t\"meetingDesc\":\"27\",\n\t\t\"invites\":[\"kedarfullstack1@gmail.com\",\"kedarfullstack2@gmail.com\"],\n\t\t\"startTime\":\"2019-01-21T05:47:08.644\",\n\t\t\"endTime\":\"2019-01-21T06:47:08.644\",\n\t\t\"meetingPassword\":\"12345\",\n\t\t\n\t\t\"user\":{\n\t\t\t\"id\":\"7\"\n\t\t}\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Meeting New",
+			"request": {
+				"url": "http://localhost:9092/meeting/editMeetingAPI",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjY2OTY1MDEsImV4cCI6MTYyNjcxNDUwMX0.MtcoEhqARnZsUo8RkSCD2NnPTJYKkDTrFI89upHxuU8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"meetingEntity\": {\n\t\t\"meetingId\": \"32\",\n\t\t\"roomName\":\"Kedar\",\n\t\t\"meetingTitle\":\"Kedar\",\n\t\t\"meetingDesc\":\"27\",\n\t\t\"invites\":[\"kedarfullstack1@gmail.com\",\"kedarfullstack2@gmail.com\"],\n\t\t\"startTime\":\"2019-01-21T05:47:08.644\",\n\t\t\"endTime\":\"2019-01-21T06:47:08.644\",\n\t\t\"meetingPassword\":\"12345\",\n\t\t\n\t\t\"user\":{\n\t\t\t\"id\":\"7\"\n\t\t}\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Meeting",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/deleteMeeting?meetingId=34",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"deleteMeeting"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "34",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjE3NTg0NjcsImV4cCI6MTYyMTc3NjQ2N30.prV0QlLxRUwhNLblcV4VcuEOMr5gpYReHL37L9vO9ZI",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Meeting New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/meeting/deleteMeetingAPI?meetingId=37",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"meeting",
+						"deleteMeetingAPI"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "37",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjY2NzI1NjAsImV4cCI6MTYyNjY5MDU2MH0.pGtAbk--gqQI02H4bNE5CmOQdIzEjM7jvYmDqCXl8Gk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Room Name Exists",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/meeting/validateRoom?roomName=3gPKFEVnt3crZGi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"meeting",
+						"validateRoom"
+					],
+					"query": [
+						{
+							"key": "roomName",
+							"value": "3gPKFEVnt3crZGi",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjY2NzI1NjAsImV4cCI6MTYyNjY5MDU2MH0.pGtAbk--gqQI02H4bNE5CmOQdIzEjM7jvYmDqCXl8Gk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Meeting Password",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/meeting/validateMeetingPassword?meetingId=32&meetingPassword=123456",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"meeting",
+						"validateMeetingPassword"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "32",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "meetingPassword",
+							"value": "123456",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZXNkc2dAZ21haWwuY29tIiwiaWF0IjoxNjIwMDIxNTM1LCJleHAiOjE2MjAwMzk1MzV9.Iw1Caw12eGFfD_YTEyWgLwjxwbenAQ_oUrlcXzckN1I",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserByEmail",
+			"request": {
+				"url": "http://localhost:9092/meeting/getUserByEmail/is3@gmail.com",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjY2NzI1NjAsImV4cCI6MTYyNjY5MDU2MH0.pGtAbk--gqQI02H4bNE5CmOQdIzEjM7jvYmDqCXl8Gk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"meetingEntity\": {\n\t\t\"roomName\":\"test 112233\",\n\t\t\"meetingTitle\":\"Test Title11\",\n\t\t\"meetingDesc\":\"Test Desc11\",\n\t\t\"invites\":[\"kedarfullstack1@gmail.com\", \"kedarfullstack2@gmail.com\", \"kedarfullstack3@gmail.com\"],\n\t\t\"startTime\":\"2019-01-21T05:47:08.644\",\n\t\t\"endTime\":\"2019-01-21T06:47:08.644\",\n\t\t\n\t\t\"user\":{\n\t\t\t\"id\":\"1\"\n\t\t}\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/user/deleteUser?userId=16",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"user",
+						"deleteUser"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "16",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MzE1MzM3ODEsImV4cCI6MTYzMTU1MTc4MX0.vohwdkITt6TNHHEbyvOXC2uQeRt4iD_6_eJeWB7iC40",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"meetingEntity\": {\n\t\t\"roomName\":\"test 112233\",\n\t\t\"meetingTitle\":\"Test Title11\",\n\t\t\"meetingDesc\":\"Test Desc11\",\n\t\t\"invites\":[\"kedarfullstack1@gmail.com\", \"kedarfullstack2@gmail.com\", \"kedarfullstack3@gmail.com\"],\n\t\t\"startTime\":\"2019-01-21T05:47:08.644\",\n\t\t\"endTime\":\"2019-01-21T06:47:08.644\",\n\t\t\n\t\t\"user\":{\n\t\t\t\"id\":\"1\"\n\t\t}\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetMeetingByDate",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/meeting/getMeetingByTitle?meetingTitle=Test",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"meeting",
+						"getMeetingByTitle"
+					],
+					"query": [
+						{
+							"key": "meetingTitle",
+							"value": "Test",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2Mzc4MzEwMjEsImV4cCI6MTYzNzg0OTAyMX0.9Ra4gA7SoIeA4b5YiosYDbcmBgRlUXQOow5VuRcFX0Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "meetingDate",
+							"value": "01-21-2019",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetMeetingByDate New",
+			"request": {
+				"url": "http://localhost:9092/meeting/getMeetingListByDateAPI",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MzU0OTA3MzcsImV4cCI6MTYzNTUwODczN30.Ys_fL0IbghrU09T2NuYvvZgIzTjgPrU4CpEmWRJolZI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": 21,\n\t\"search\": \"\",\n\t\"meetingDate\": \"2021-10-29\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Meeting By MeetingId",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/register/getMeetingById?meetingId=9",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"register",
+						"getMeetingById"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "9",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjE0MzAyMDQsImV4cCI6MTYyMTQ0ODIwNH0.WO8nKzsSdfPMw7rfEvZeUHWVrmKJsUwoR0_meSocD7M",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "meetingDate",
+							"value": "01-21-2019",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Meeting List By Date Local",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/meeting/getAllMeetingListByDate?meetingDate=2021-09-24&searchText=Testa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"meeting",
+						"getAllMeetingListByDate"
+					],
+					"query": [
+						{
+							"key": "meetingDate",
+							"value": "2021-09-24",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "searchText",
+							"value": "Testa",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2Mzc5MDQ5NDEsImV4cCI6MTYzNzkyMjk0MX0.yqI6GURSHO1543HGcJ8OYle9Mein41T2aId1bhyJ_QY",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "meetingDate",
+							"value": "01-21-2019",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Meeting List By Date Local Staging",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/meeting/getAllMeetingListByDate?meetingDate=2021-10-29&searchText=KD",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"meeting",
+						"getAllMeetingListByDate"
+					],
+					"query": [
+						{
+							"key": "meetingDate",
+							"value": "2021-10-29",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "searchText",
+							"value": "KD",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2Mzc5MDQ5NDEsImV4cCI6MTYzNzkyMjk0MX0.yqI6GURSHO1543HGcJ8OYle9Mein41T2aId1bhyJ_QY",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "meetingDate",
+							"value": "01-21-2019",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Save Document",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/document/addDocument?meetingId=33&source=Documents&userId=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"document",
+						"addDocument"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "33",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "Documents",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZXNkc2dAZ21haWwuY29tIiwiaWF0IjoxNjIwOTcyOTU1LCJleHAiOjE2MjA5OTA5NTV9.619QZMtunbhQsOWkSQdzDiRUWk2WA0DnOl0wfchm594",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add All Documents",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/document/addAllDocuments?meetingId=1408&source=Documents&userId=16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"document",
+						"addAllDocuments"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "1408",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "Documents",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "16",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2Mzc5MTc0MjgsImV4cCI6MTYzNzkzNTQyOH0.yB87TdljkbkZM0kPQMU714lu8kXkYkDJi9_ogqlsujk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"description": "",
+							"type": "file",
+							"src": "d9569bbed4393e2ceb1af7ba64fdf86a (3).jpg"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance Check-in",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/attendance/addCheckInTime?meetingId=33&userId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"attendance",
+						"addCheckInTime"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "33",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MjY0MTg4MzAsImV4cCI6MTYyNjQzNjgzMH0.ZiN8Prt0Txa7sAEFFpOdwYNxRPL9aAvhy9hXlIhHd-8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance Check-in New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/attendance/addCheckInTimeAPI?meetingId=33&userId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"attendance",
+						"addCheckInTimeAPI"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "33",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MjY0MTg4MzAsImV4cCI6MTYyNjQzNjgzMH0.ZiN8Prt0Txa7sAEFFpOdwYNxRPL9aAvhy9hXlIhHd-8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance Check-out",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/attendance/addCheckOutTime?attendanceId=9",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"attendance",
+						"addCheckOutTime"
+					],
+					"query": [
+						{
+							"key": "attendanceId",
+							"value": "9",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjIwMjQ4OTUsImV4cCI6MTYyMjA0Mjg5NX0.TQ1-nnYzizqoBknUcxoCB0mKDqxF2b10NDbC_jZBPnY",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance Check-out New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/attendance/addCheckOutTimeAPI?attendanceId=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"attendance",
+						"addCheckOutTimeAPI"
+					],
+					"query": [
+						{
+							"key": "attendanceId",
+							"value": "9",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjIwMjQ4OTUsImV4cCI6MTYyMjA0Mjg5NX0.TQ1-nnYzizqoBknUcxoCB0mKDqxF2b10NDbC_jZBPnY",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance List By User",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/viewAttendanceByUser?meetingId=35&userId=1",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"viewAttendanceByUser"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "35",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MjY0MzAyOTksImV4cCI6MTYyNjQ0ODI5OX0.b4JFuh0jUoOVsSpKRpiCxTM5UzS2cyU9hfUF8NqF7Ic",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance List By User New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/attendance/viewAttendanceByUserAPI?meetingId=33&userId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"attendance",
+						"viewAttendanceByUserAPI"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "33",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MjY0MzAyOTksImV4cCI6MTYyNjQ0ODI5OX0.b4JFuh0jUoOVsSpKRpiCxTM5UzS2cyU9hfUF8NqF7Ic",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance List",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/attendance/viewAttendance?meetingId=1329",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"attendance",
+						"viewAttendance"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "1329",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYWFAZ21haWwuY29tIiwiaWF0IjoxNjM1MjQ2MzE4LCJleHAiOjE2MzUyNjQzMTh9.s6ME0TvIHP-zva6pvc1CSZMTYS93VtyEU4zEKa1HXXk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUserAttendanceByMeetingId List",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/attendance/getAllUserAttendanceByMeetingId?meetingId=1329",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"attendance",
+						"getAllUserAttendanceByMeetingId"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "1329",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MzUzNDIwNzQsImV4cCI6MTYzNTM2MDA3NH0.xkaLdir5LvBAmHzaBjycr6DrQWz6OvMgWtHO45205N8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance List New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/attendance/viewAttendanceAPI?meetingId=33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"attendance",
+						"viewAttendanceAPI"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "33",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MjY0MTg4MzAsImV4cCI6MTYyNjQzNjgzMH0.ZiN8Prt0Txa7sAEFFpOdwYNxRPL9aAvhy9hXlIhHd-8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Document",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/document/deleteDocument?documentId=9",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"document",
+						"deleteDocument"
+					],
+					"query": [
+						{
+							"key": "documentId",
+							"value": "9",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjQ4NTk5MzgsImV4cCI6MTYyNDg3NzkzOH0.OrBUKytAPdIAkUScFYqX9Zpcno22hpYwZbS4266o-F0",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Document New",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/document/deleteDocument?documentId=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"document",
+						"deleteDocument"
+					],
+					"query": [
+						{
+							"key": "documentId",
+							"value": "6",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2Mjc4ODM1NDAsImV4cCI6MTYyNzkwMTU0MH0.lEZQMUq81Ck5FFzQOliyeYEyu9qhCA7U5dCb8fWCVZ4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Save Excel",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/document/addExcelData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjE0Mjc2MDUsImV4cCI6MTYyMTQ0NTYwNX0.qErK-dyhWQiTIMfvD257PL9tEpFsBY1WCAqi0hftdMU",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"description": "",
+							"type": "file",
+							"src": "testsample.xlsx"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Save Profile Picture",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/document/addAllDocuments?meetingId=0&source=Profile&userId=21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"document",
+						"addAllDocuments"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "Profile",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "21",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2Mzc5MTc0MjgsImV4cCI6MTYzNzkzNTQyOH0.yB87TdljkbkZM0kPQMU714lu8kXkYkDJi9_ogqlsujk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"description": "",
+							"type": "file",
+							"src": "1635335629886Kedar.jpg"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Save Profile Picture Staging",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/document/addAllDocuments?meetingId=0&source=Profile&userId=106",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"document",
+						"addAllDocuments"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "Profile",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "106",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2Mzc5MTc0MjgsImV4cCI6MTYzNzkzNTQyOH0.yB87TdljkbkZM0kPQMU714lu8kXkYkDJi9_ogqlsujk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"description": "",
+							"type": "file",
+							"src": "1635335629886Kedar.jpg"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Document List",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/document/getDocumentList?meetingId=285&source=Recordings&userId=0",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"document",
+						"getDocumentList"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "285",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "Recordings",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYWFAZ21haWwuY29tIiwiaWF0IjoxNjIxNTc1MDQ1LCJleHAiOjE2MjE1OTMwNDV9.Be8tv0Bmkl6nifJa06TJso2cXt9lSJbyaa1HuB1P0Hc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Json Data",
+			"request": {
+				"url": "http://localhost:9092/document/getJsonData",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2Mjk5NTEzNjgsImV4cCI6MTYyOTk2OTM2OH0.o4UsFnqzKYkGmS9M2IETeZ2oDK8oTCH7HPh2R7COAkE",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Document List New",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/document/getDocumentListAPI?meetingId=1408&source=Documents&userId=16",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"document",
+						"getDocumentListAPI"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "1408",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "Documents",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "16",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYWFAZ21haWwuY29tIiwiaWF0IjoxNjM2OTcxMDYwLCJleHAiOjE2MzY5ODkwNjB9.yxKjZGv3btLWjIy8Cj-TFP90V-ODIK7RA8R7s-QG4lU",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Document List copy",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/document/getDocumentList?meetingId=33&source=Documents&userId=0",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"document",
+						"getDocumentList"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "33",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "Documents",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcnRoYWtrYXIyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjE1NzcxMzcsImV4cCI6MTYyMTU5NTEzN30.E7gKd4UmTRfk8qf_gX8YI5k3qN4hWxroTIw5JxukXss",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile Picture",
+			"request": {
+				"url": {
+					"raw": "https://devmeet.alibiz.net:8443/alimeet/document/getDocumentList?meetingId=0&source=Profile&userId=7",
+					"protocol": "https",
+					"host": [
+						"devmeet",
+						"alibiz",
+						"net"
+					],
+					"port": "8443",
+					"path": [
+						"alimeet",
+						"document",
+						"getDocumentList"
+					],
+					"query": [
+						{
+							"key": "meetingId",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "Profile",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "7",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZXNkc2dAZ21haWwuY29tIiwiaWF0IjoxNjIwOTgwNDE4LCJleHAiOjE2MjA5OTg0MTh9.Sw05n1m-QDvMIBhnF4ZkEO0CpbLpMpmfaXPKMVH_wP8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllMeetingListByDate ",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9092/meeting/getAllMeetingListByDate?meetingDate=2021-09-24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"meeting",
+						"getAllMeetingListByDate"
+					],
+					"query": [
+						{
+							"key": "meetingDate",
+							"value": "2021-09-24",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWRhcmZ1bGxzdGFja0BnbWFpbC5jb20iLCJpYXQiOjE2MzI0NjE5MzMsImV4cCI6MTYzMjQ3OTkzM30.UbEfITzJhfKhSeewSXCi7gXa3aXBsIalehj_5RH7vng",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "meetingDate",
+							"value": "01-21-2019",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate User Devmeet",
+			"request": {
+				"url": "https://devmeet.alibiz.net:8443/alimeet/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZWdAZ21haWwuY29tIiwiaWF0IjoxNjE0MTA5MzM3LCJleHAiOjE2MTQxMjczMzd9.6HRduheSSDNUf0aMJ8pl5pOs41xPElNS45hDrieoRLM",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"aaa@gmail.com\",\n\"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate User Local",
+			"request": {
+				"url": "http://localhost:9092/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZWdAZ21haWwuY29tIiwiaWF0IjoxNjE0MTA5MzM3LCJleHAiOjE2MTQxMjczMzd9.6HRduheSSDNUf0aMJ8pl5pOs41xPElNS45hDrieoRLM",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"kedarfullstack@gmail.com\",\n\"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate User Prod",
+			"request": {
+				"url": "http://localhost:9092/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmNkZWdAZ21haWwuY29tIiwiaWF0IjoxNjE0MTA5MzM3LCJleHAiOjE2MTQxMjczMzd9.6HRduheSSDNUf0aMJ8pl5pOs41xPElNS45hDrieoRLM",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"kedarfullstack@gmail.com\",\n\"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
